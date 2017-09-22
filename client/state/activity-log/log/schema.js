@@ -126,6 +126,7 @@ export const logItemsSchema = {
 					actorName: { type: 'string' },
 					actorRemoteId: { type: 'integer' },
 					actorRole: { type: 'string' },
+					actorStatus: { type: 'string' },
 					actorType: { type: 'string' },
 					actorWpcomId: { type: 'integer' },
 				},
