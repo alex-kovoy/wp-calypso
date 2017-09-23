@@ -19,7 +19,7 @@ import PostUtils from 'lib/posts/utils';
 import * as stats from 'lib/posts/stats';
 import EditorFeaturedImagePreviewContainer from './preview-container';
 import Button from 'components/button';
-import RemoveButton from 'components/remove-button';
+import { RemoveButton } from 'components/remove-button';    // todo but then it's not localized when load like this?
 import { getMediaItem } from 'state/selectors';
 import { getFeaturedImageId } from 'lib/posts/utils';
 import QueryMedia from 'components/data/query-media';

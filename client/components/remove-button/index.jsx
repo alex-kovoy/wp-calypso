@@ -16,15 +16,17 @@ import { localize } from 'i18n-calypso';
  */
 import Button from 'components/button';
 
-class RemoveButton extends Component {
+// this breaks in browser though? or my local build is just broken?
+
+export class RemoveButton extends Component {
 	static propTypes = {
 		onRemove: PropTypes.func,
-		translate: PropTypes.func
+		translate: PropTypes.func,
 	};
 
 	static defaultProps = {
 		onRemove: noop,
-		translate: identity,    // todo just require instead?
+		translate: identity,
 	};
 
 	render() {
@@ -32,6 +34,7 @@ class RemoveButton extends Component {
 
 		if ( ! onRemove ) {
 			return;
+			// why is this needed? just make it required? make sure doesn't mess up the old usage of it though
 		}
 
 		return (
